@@ -8,6 +8,7 @@ import { PropertybindingComponent } from './propertybinding/propertybinding.comp
 import { ClassbindingComponent } from './classbinding/classbinding.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
+import { TemplateReffrenceVarriableComponent } from './template-reffrence-varriable/template-reffrence-varriable.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EventbindingComponent } from './eventbinding/eventbinding.component';
     PropertybindingComponent,
     ClassbindingComponent,
     StylebindingComponent,
-    EventbindingComponent
+    EventbindingComponent,
+    TemplateReffrenceVarriableComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { EventbindingComponent } from './eventbinding/eventbinding.component';
     // TopicInterpolationComponent,PropertybindingComponent,
     // ClassbindingComponent,
     // StylebindingComponent,
-    EventbindingComponent
+    //EventbindingComponent,
+    TemplateReffrenceVarriableComponent
   ]
 })
 export class AppModule { }
