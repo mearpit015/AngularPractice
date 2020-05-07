@@ -10,7 +10,8 @@ import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { TemplateReffrenceVarriableComponent } from './template-reffrence-varriable/template-reffrence-varriable.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
-import {FormsModule} from '@angular/forms'; // for two way binding we ned to import FormsModule
+import {FormsModule} from '@angular/forms';
+import { StucturalDirectiveComponent } from './stuctural-directive/stuctural-directive.component'; // for two way binding we ned to import FormsModule
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {FormsModule} from '@angular/forms'; // for two way binding we ned to imp
     StylebindingComponent,
     EventbindingComponent,
     TemplateReffrenceVarriableComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    StucturalDirectiveComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import {FormsModule} from '@angular/forms'; // for two way binding we ned to imp
     // StylebindingComponent,
     //EventbindingComponent,
     //TemplateReffrenceVarriableComponent,
-    TwoWayBindingComponent
+    //TwoWayBindingComponent,
+    StucturalDirectiveComponent
   ]
 })
 export class AppModule { }
