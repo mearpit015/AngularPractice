@@ -1,0 +1,14 @@
+
+<input type="text" [id]="myId" value="Arpit"> <!--now id = "testID" on browser -->
+<!-- <input type="text" id="{{myId}}" value="Arpit"> -->
+ <!--now id = "testID" on browser still same but here some interpolation restriction  -->
+<!-- <input type="text"  disabled="false" value="Arpit">--> <!--setting disabled="false not working because  
+    interpolation takes as a string
+-->
+<input type="text"  bind-disabled="isdisabled" value="Arpit"> 
+<!--[disabled]="false" now with the use of square bracket it's works. Now you can also use this with the use 
+    of poerpty isdisabled. We can also use bind-disabled it works same as square brackets([disabled]) -->
+
+    
+<!-- Attribute and Property are not the same Attributes define by html but Property define by  DOM ,
+     Attributes can not change once initialize but Property however can change-->

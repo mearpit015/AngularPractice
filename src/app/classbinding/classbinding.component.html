@@ -1,0 +1,19 @@
+<style>
+    .text-success{
+        color: green;
+    }
+    .text-danger{
+        color: red;
+    }
+</style>
+<!--class binding basicallly used incase of dynamic creation of html or condition based html rendering-->
+<p class="text-success"> {{name}}</p>
+
+<p [class]="successClass"> {{name}}</p>
+
+<p [class.text-danger]="hasError"> {{name}}</p>  <!--in this case apply single class based on boolean property-->
+
+<p [ngClass]="messageClasses"> {{name}}</p> 
+<!--for multiple class we used ngClass-->
+
+<!-- <p [class]="successClass" class="text-success"> {{name}}</p> --> <!--you have to use one only other wise default will work-->

@@ -1,0 +1,14 @@
+
+<p>Topic {{topic}}</p>
+
+<!--can do -->
+<h2>{{2+2}}</h2>   <!--using interpolation -->
+ <p>{{"Welcome " +topic}}</p> <!--string concatination-->
+ <p>property length {{topic.length}}</p>
+ <p>{{topic.toUpperCase()}}</p>
+<p>{{greetUser()}}</p>
+
+ <!--can not do -->
+ <!-- <p{{a=2+2}}></p> -->  <!--parse error -->
+ <!-- <p>{{window.location.href}}</p>   error -->
+ <p>{{siteUrl}}</p>
