@@ -1,0 +1,9 @@
+<p>two-way-binding</p>
+
+<input [(ngModel)]="name" type="text" >
+<!--use ngModel for two way binding and also import FormsModule from @angular/forms in app.module.ts after that 
+    inside imports:[] in appmodule add FormsModue same as BrowserModule-->
+    <!--Also remember always [(ngModel)] before any attribute in input tag
+    <input  type="text" [(ngModel)]="name"> this is not work.
+    -->
+{{name}}

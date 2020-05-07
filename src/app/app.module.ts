@@ -9,6 +9,8 @@ import { ClassbindingComponent } from './classbinding/classbinding.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { TemplateReffrenceVarriableComponent } from './template-reffrence-varriable/template-reffrence-varriable.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import {FormsModule} from '@angular/forms'; // for two way binding we ned to import FormsModule
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { TemplateReffrenceVarriableComponent } from './template-reffrence-varria
     ClassbindingComponent,
     StylebindingComponent,
     EventbindingComponent,
-    TemplateReffrenceVarriableComponent
+    TemplateReffrenceVarriableComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule // for two way binding we ned to import FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent,
@@ -30,7 +34,8 @@ import { TemplateReffrenceVarriableComponent } from './template-reffrence-varria
     // ClassbindingComponent,
     // StylebindingComponent,
     //EventbindingComponent,
-    TemplateReffrenceVarriableComponent
+    //TemplateReffrenceVarriableComponent,
+    TwoWayBindingComponent
   ]
 })
 export class AppModule { }
