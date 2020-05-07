@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-stuctural-directive',
+  selector: 'app-structural-directive',
   templateUrl: './stuctural-directive.component.html',
   styleUrls: ['./stuctural-directive.component.css']
 })

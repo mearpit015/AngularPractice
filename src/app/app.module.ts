@@ -11,7 +11,9 @@ import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { TemplateReffrenceVarriableComponent } from './template-reffrence-varriable/template-reffrence-varriable.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import {FormsModule} from '@angular/forms';
-import { StucturalDirectiveComponent } from './stuctural-directive/stuctural-directive.component'; // for two way binding we ned to import FormsModule
+import { StucturalDirectiveComponent } from './structural-directive/stuctural-directive.component';
+import { ParentComponentComponent } from './parent-component/parent-component.component';
+import { ChildComponentComponent } from './child-component/child-component.component'; // for two way binding we ned to import FormsModule
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { StucturalDirectiveComponent } from './stuctural-directive/stuctural-dir
     EventbindingComponent,
     TemplateReffrenceVarriableComponent,
     TwoWayBindingComponent,
-    StucturalDirectiveComponent
+    StucturalDirectiveComponent,
+    ParentComponentComponent,
+    ChildComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,8 @@ import { StucturalDirectiveComponent } from './stuctural-directive/stuctural-dir
     //EventbindingComponent,
     //TemplateReffrenceVarriableComponent,
     //TwoWayBindingComponent,
-    StucturalDirectiveComponent
+    // StucturalDirectiveComponent,
+    ParentComponentComponent
   ]
 })
 export class AppModule { }
