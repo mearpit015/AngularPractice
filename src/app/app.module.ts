@@ -3,16 +3,31 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TopicInterpolationComponent } from './topic-interpolation/topic-interpolation.component';
+import { PropertybindingComponent } from './propertybinding/propertybinding.component';
+import { ClassbindingComponent } from './classbinding/classbinding.component';
+import { StylebindingComponent } from './stylebinding/stylebinding.component';
+import { EventbindingComponent } from './eventbinding/eventbinding.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopicInterpolationComponent,
+    PropertybindingComponent,
+    ClassbindingComponent,
+    StylebindingComponent,
+    EventbindingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,
+    // TopicInterpolationComponent,PropertybindingComponent,
+    // ClassbindingComponent,
+    // StylebindingComponent,
+    EventbindingComponent
+  ]
 })
 export class AppModule { }
