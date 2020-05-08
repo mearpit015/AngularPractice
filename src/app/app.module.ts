@@ -14,7 +14,10 @@ import {FormsModule} from '@angular/forms';
 import { StucturalDirectiveComponent } from './structural-directive/stuctural-directive.component';
 import { ParentComponentComponent } from './parent-component/parent-component.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
-import { TopicPipesComponent } from './topic-pipes/topic-pipes.component'; // for two way binding we ned to import FormsModule
+import { TopicPipesComponent } from './topic-pipes/topic-pipes.component';
+import { EmployeelistComponent } from './employeelist/employeelist.component';
+import { AllemployeesComponent } from './allemployees/allemployees.component'; // for two way binding we ned to import FormsModule
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,12 +32,15 @@ import { TopicPipesComponent } from './topic-pipes/topic-pipes.component'; // fo
     StucturalDirectiveComponent,
     ParentComponentComponent,
     ChildComponentComponent,
-    TopicPipesComponent
+    TopicPipesComponent,
+    EmployeelistComponent,
+    AllemployeesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule // for two way binding we ned to import FormsModule
+    FormsModule ,// for two way binding we ned to import FormsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent,
@@ -46,7 +52,8 @@ import { TopicPipesComponent } from './topic-pipes/topic-pipes.component'; // fo
     //TwoWayBindingComponent,
     // StucturalDirectiveComponent,
     // ParentComponentComponent,
-    TopicPipesComponent  
+    // TopicPipesComponent  ,
+    EmployeelistComponent,AllemployeesComponent
   ]
 })
 export class AppModule { }
