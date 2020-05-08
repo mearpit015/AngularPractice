@@ -13,7 +13,8 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import {FormsModule} from '@angular/forms';
 import { StucturalDirectiveComponent } from './structural-directive/stuctural-directive.component';
 import { ParentComponentComponent } from './parent-component/parent-component.component';
-import { ChildComponentComponent } from './child-component/child-component.component'; // for two way binding we ned to import FormsModule
+import { ChildComponentComponent } from './child-component/child-component.component';
+import { TopicPipesComponent } from './topic-pipes/topic-pipes.component'; // for two way binding we ned to import FormsModule
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ChildComponentComponent } from './child-component/child-component.compo
     TwoWayBindingComponent,
     StucturalDirectiveComponent,
     ParentComponentComponent,
-    ChildComponentComponent
+    ChildComponentComponent,
+    TopicPipesComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { ChildComponentComponent } from './child-component/child-component.compo
     //TemplateReffrenceVarriableComponent,
     //TwoWayBindingComponent,
     // StucturalDirectiveComponent,
-    ParentComponentComponent
+    // ParentComponentComponent,
+    TopicPipesComponent
   ]
 })
 export class AppModule { }
