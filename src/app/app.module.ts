@@ -46,7 +46,7 @@ import { TopicPipesComponent } from './topic-pipes/topic-pipes.component'; // fo
     //TwoWayBindingComponent,
     // StucturalDirectiveComponent,
     // ParentComponentComponent,
-    TopicPipesComponent 
+    TopicPipesComponent  
   ]
 })
 export class AppModule { }

@@ -10,7 +10,7 @@ describe('TopicPipesComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ TopicPipesComponent ]
     })
-    .compileComponents();
+    .compileComponents(); 
   })); 
 
   beforeEach(() => {
