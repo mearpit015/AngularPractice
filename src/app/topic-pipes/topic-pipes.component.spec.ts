@@ -11,7 +11,7 @@ describe('TopicPipesComponent', () => {
       declarations: [ TopicPipesComponent ]
     })
     .compileComponents();
-  }));
+  })); 
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TopicPipesComponent);
