@@ -18,6 +18,8 @@ import { TopicPipesComponent } from './topic-pipes/topic-pipes.component';
 import { EmployeelistComponent } from './employeelist/employeelist.component';
 import { AllemployeesComponent } from './allemployees/allemployees.component'; // for two way binding we ned to import FormsModule
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { HttpClientModule } from '@angular/common/http';
     ChildComponentComponent,
     TopicPipesComponent,
     EmployeelistComponent,
-    AllemployeesComponent
+    AllemployeesComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
